@@ -1,0 +1,14 @@
+#navbar {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+#feed {
+    min-height: 85vh;
+}
+
+#footer {
+    background-color: lightgray;
+    width: 100%;
+    padding: 10pt;
+}

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Readit</title>
 
     <!-- Bootstrap -->
@@ -19,18 +22,37 @@
             <div class="input-group-prepend">
                 <label class="input-group-text" for="subreddit-field">r/</label>
             </div>
-            <input id="subreddit-field" type="text" class="form-control" placeholder="Subreddit" aria-label="Subreddit">
+            <input id="subreddit-field" type="text" class="form-control" placeholder="Subreddit" aria-label="Subreddit" spellcheck="false">
             <div class="input-group-append">
-                <button id="subreddit-submit" class="btn btn-outline-secondary" type="button">Find Subreddit</button>
+                <button id="subreddit-submit" class="btn btn-outline-secondary" type="button">Readit</button>
             </div>
         </div>
     </div>
     <div id="feed">
-
+        <div id="subreddit-metadata">
+        <!-- TODO: Add metadata -->
+        </div>
+        <template id="post-template">
+            {{#posts}}
+            <div class="card animated slideInUp">
+                {{#showImage}}
+                <img src="{{thumbnail}}" class="card-img-top" alt="{{alt}}">
+                {{/showImage}}
+                <div class="card-body">
+                    <h5 class="card-title">{{{title}}}</h5>
+                    <p class="card-text">{{{body}}}</p>
+                </div>
+            </div>
+            {{/posts}}
+        </template>
+        <div id="posts" class="card-columns">
+        </div>
     </div>
-    <div class="text-center text-secondary" id="footer">
-        Made with <i class="fas fa-heart"></i> by Larry Tseng.
-    </div>
+</div>
+<!-- TODO: Move footer down and re-enable popular feed -->
+<!-- TODO: Make dark theme -->
+<div class="text-center text-secondary" id="footer">
+    Made with <i class="fas fa-heart"></i> by <a class="text-secondary" href="https://github.com/LTSENG01">Larry Tseng</a>.
 </div>
 
 <!-- JQuery -->
