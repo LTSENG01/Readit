@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Readit</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- main.css -->
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+<div class="container">
+    <div id="navbar">
+        <div class="input-group mb-2" id="subreddit-input-group">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="subreddit-field">r/</label>
+            </div>
+            <input id="subreddit-field" type="text" class="form-control" placeholder="Subreddit" aria-label="Subreddit">
+            <div class="input-group-append">
+                <button id="subreddit-submit" class="btn btn-outline-secondary" type="button">Find Subreddit</button>
+            </div>
+        </div>
+    </div>
+    <div id="feed">
+
+    </div>
+    <div class="text-center text-secondary" id="footer">
+        Made with <i class="fas fa-heart"></i> by Larry Tseng.
+    </div>
+</div>
+
+<!-- JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Mustache -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js" integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8=" crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/ee5e6d2d47.js" crossorigin="anonymous"></script>
+<!-- Main JS -->
+<script src="main.js"></script>
 </body>
 </html>
