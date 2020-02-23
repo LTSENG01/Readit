@@ -29,6 +29,10 @@ function getSubreddit(subreddit, successFn, failureFn, alwaysFn) {
     })
 }
 
+function checkImageURL(url) {
+    return (url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+}
+
 /**
  *
  * @param posts
@@ -40,8 +44,14 @@ function cleanUpJSON(posts) {
         let post = p.data;
         let showImage = false;
         let text = post.selftext;
-        if (post.thumbnail !== "" && post.thumbnail !== "self" && post.thumbnail !== "default") {
+        let image = post.thumbnail;
+        if (checkImageURL(image)) {
             showImage = true;
+        } else {
+            if (checkImageURL(post.url)) {
+                showImage = true;
+                image = post.url;
+            }
         }
         if (text.length > 250) {
             text = text.slice(0, 250) + "...";
@@ -52,7 +62,7 @@ function cleanUpJSON(posts) {
             author: post.author,
             body: text,
             showImage: showImage,
-            thumbnail: post.thumbnail,
+            thumbnail: image,
             alt: post.title
         });
     });
