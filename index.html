@@ -1,3 +1,5 @@
+<!-- Readit -->
+<!-- Larry Tseng -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="main-content">
     <div id="navbar">
         <div class="input-group mb-2" id="subreddit-input-group">
             <div class="input-group-prepend">
@@ -32,25 +34,31 @@
         <div id="subreddit-metadata">
         <!-- TODO: Add metadata -->
         </div>
-        <!-- TODO: Add links -->
         <template id="post-template">
-            {{#posts}}
-            <div class="card animated slideInUp">
-                {{#showImage}}
-                <img src="{{thumbnail}}" class="card-img-top" alt="{{alt}}">
-                {{/showImage}}
-                <div class="card-body">
-                    <h5 class="card-title">{{{title}}}</h5>
-                    <p class="card-text">{{{body}}}</p>
-                </div>
+            <div class="card-columns">
+                {{#posts}}
+                <a href="https://reddit.com/{{url}}">
+                    <div class="card animated slideInUp post" id="{{id}}">
+                        {{#showImage}}
+                        <img src="{{thumbnail}}" class="card-img-top" alt="{{alt}}">
+                        {{/showImage}}
+                        <div class="card-body">
+                            <h5 class="card-title">{{{title}}}</h5>
+                            <h6 class="author text-secondary">by u/{{author}}</h6>
+                            <p class="card-text">{{{body}}}</p>
+                        </div>
+                    </div>
+                </a>
+                {{/posts}}
             </div>
-            {{/posts}}
         </template>
-        <div id="posts" class="card-columns">
+        <div id="posts">
         </div>
     </div>
 </div>
-<!-- TODO: Move footer down and re-enable popular feed -->
+<div id="load-more-div">
+    <button class="btn btn-outline-primary" id="load-more">Load More...</button>
+</div>
 <!-- TODO: Make dark theme -->
 <div class="text-center text-secondary" id="footer">
     Made with <i class="fas fa-heart"></i> by <a class="text-secondary" href="https://github.com/LTSENG01">Larry Tseng</a>.
