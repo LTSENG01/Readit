@@ -19,7 +19,7 @@ Introducing Readit, a brand new Reddit feed created with design in mind.
 - [Mustache](http://mustache.github.io)
 - [Font Awesome](https://fontawesome.com)
 
-### Enter the wrong subreddit name? No problem.
+### Enter the wrong subreddit name? Get visual feedback.
 ![Validated entry](screenshots/bad_subreddit_name.gif)
 
 ### Mobile
