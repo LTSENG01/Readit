@@ -3,7 +3,7 @@ Website: [https://ltseng01.github.io/Readit](https://ltseng01.github.io/Readit)
 ![Main interface](screenshots/desktop_main.png)
 ![Main interface](screenshots/desktop_main_dark.png)
 
-Introducing Readit, a brand new Reddit feed created with design in mind. Featuring an intuitive and elegant layout, it makes following up on your favorite Reddit posts easier with less distractions and clutter. Works on almost all screen sizes and browsers for maximum compatibility.
+Introducing Readit, a brand new Reddit feed created with design in mind. Featuring an intuitive and elegant layout, it makes following up on your favorite Reddit posts easier with less distractions and clutter. Works on almost all screen sizes and browsers for maximum compatibility. When you open the webpage, it starts with the [r/popular](https://reddit.com/r/popular) subreddit. Change the text box at the top of the page to the subreddit of your choice and hit "Readit" to load the feed for that subreddit. Behind the scenes, the webpage makes an AJAX call to retrieve the JSON associated with that subreddit which by default includes a lot of metadata and the top posts. JavaScript functions clean up that data, keeping only what is necessary, and renders them onto the webpage using MustacheJS.
 
 ### Features:
 - Dark Mode 🌒/☀️ – switch between interfaces depending on your operating system's settings
