@@ -1,5 +1,5 @@
 # Readit: A Modern Reddit Feed
-
+[https://ltseng01.github.io/Readit](https://ltseng01.github.io/Readit)
 ![Main interface](screenshots/desktop_main.png)
 
 Introducing Readit, a brand new Reddit feed created with design in mind.
