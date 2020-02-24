@@ -13,11 +13,11 @@ Introducing Readit, a brand new Reddit feed created with design in mind.
 – Animations – smooth animations bring in new posts
 
 ### Frameworks & Libraries:
-[Animate.css](https://daneden.github.io/animate.css/)
-[Bootstrap](https://getbootstrap.com)
-[JQuery](https://jquery.com)
-[Mustache](http://mustache.github.io)
-[Font Awesome](https://fontawesome.com)
+- [Animate.css](https://daneden.github.io/animate.css/)
+- [Bootstrap](https://getbootstrap.com)
+- [JQuery](https://jquery.com)
+- [Mustache](http://mustache.github.io)
+- [Font Awesome](https://fontawesome.com)
 
 ### Enter the wrong subreddit name? No problem.
 ![Validated entry](screenshots/bad_subreddit_name.gif)
