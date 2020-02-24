@@ -31,7 +31,7 @@ Introducing Readit, a brand new Reddit feed created with design in mind. Featuri
 ### Tablet
 ![Tablet](screenshots/tablet_main.png)
 
-## Questions or Bugs?
+### Questions or Bugs?
 Feel free to create an issue or contact me! Thanks!
 
 - Larry
