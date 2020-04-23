@@ -33,5 +33,3 @@ Introducing Readit, a brand new Reddit feed created with design in mind. Featuri
 
 ### Questions or Bugs?
 Feel free to create an issue or contact me! Thanks!
-
-- Larry
