@@ -2,7 +2,8 @@
 // Larry Tseng
 
 const redditBase = "https://reddit.com/";
-const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
+// const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
+const corsAnywhere = "";    // temp bypass
 
 let currentSubreddit = "";
 
